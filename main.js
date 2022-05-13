@@ -34,7 +34,7 @@ const database = [
   {
     name: "Luffy DGAF",
     id: "81555340",
-    kp: "2,938,574,474",
+    kp: "1,938,574,474",
     deaths: "6,158,317",
   },
   {
