@@ -16,7 +16,10 @@ body {
   background-color: #0d0c1d;
   color: #f8f4f9;
 }
-
+.main-container {
+  height: 100vh;
+  display: grid;
+}
 .container {
   max-width: 120rem;
   margin: 0 auto;
@@ -41,6 +44,17 @@ input[type="text"] {
 input[type="text"]:focus {
   border: none;
   outline-color: #f3414e;
+}
+img {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  margin: 20px auto;
+  display: block;
+  animation:slide;
+  animation-duration:2s;
+  animation-timing-function:linear;
+  animation-iteration-count: infinite;
 }
 
 .searchbar {
@@ -71,10 +85,8 @@ input[type="text"]:focus {
   margin-bottom: 0;
 }
 .footer {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translate(-50%);
+  position: relative;
+  margin: 0 auto;
 }
 .copy {
   color: red;
@@ -110,6 +122,14 @@ input[type="text"]:focus {
   }
   to {
     opacity: 1;
+  }
+}
+@keyframes slide {
+  50% {
+    transform: translateY(20px)
+  }
+  100% {
+    transform: translateY(0)
   }
 }
 
