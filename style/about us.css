@@ -5,7 +5,7 @@
 body {
   background-color: #0d0c1d;
 }
-ul {
+.content ul {
   padding: 40px;
   background: #151630;
   position: absolute;
@@ -13,39 +13,119 @@ ul {
   top: 40%;
   transform: translate(-50%, -50%);
 }
-ul li {
+.content ul li {
   color: white;
   font-size: 30px;
 }
-h1 {
+.content h1 {
   color: white;
   font-size: 60px;
   text-align: center;
 }
+
+.menu-icon {
+  display: none;
+}
+#list {
+  display: block;
+}
+#list ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+#list ul li {
+  margin-left: 50px;
+  font-size: 22px;
+}
+#list ul li a {
+  color: #7c2af1;
+  text-decoration: none;
+}
+#list ul li a:hover {
+  color: white;
+}
+.footer {
+  color: white;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.copy {
+  color: red;
+}
+
 @media (max-width: 768px) {
-  ul {
+  .content ul {
     width: 100%;
+    margin-top: 40px;
   }
-  ul li {
+  .content ul li {
     font-size: 20px;
     display: block;
-    margin-left:20px;
+    margin-left: 20px;
+  }
+  #list {
+    display: none;
+  }
+  #list ul {
+    background: #151630;
+    flex-direction: column;
+    margin-top: 0;
+    align-items: center;
+  }
+  #list ul li {
+    margin-left: 0 !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  #list ul li:hover {
+    cursor: pointer;
+    background: #7c2af1;
+  }
+  #list ul li:hover a {
+    color: white;
+  }
+  .menu-icon {
+    display: block;
+    height: 48px;
+    background: #7c2af1;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    line-height: 2em;
+    text-transform: uppercase;
   }
 }
 @media (max-width: 620px) {
-    h1{
-        font-size: 40px;
-    }
+  .content h1 {
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 420px) {
-    ul{
-        overflow: hidden;
-    }
-    h1{
-        font-size: 30px;
-    }
-    ul li{
-        margin-left:10px;
-    }
+  .content ul {
+    overflow: hidden;
+  }
+  .content h1 {
+    font-size: 30px;
+  }
+  .content ul li {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 990px) {
+  #list ul {
+    margin-left: 0;
+  }
+  #list ul li {
+    margin-left: 40px;
+    font-size: 18px;
+  }
 }
