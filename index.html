@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2381 Stats</title>
-    <link rel="stylesheet" href="style/main.css" />
-    <link rel="icon" href="style/favicon.ico" />
-  </head>
-  <body>
-       <div class="main-container">
-    <div class="container">
-      <h1 class="title">Governors Information</h1>
-      <img src="style/646.png" alt="">
-      <input
-        class="searchbar"
-        type="text"
-        placeholder="Please enter your ID or your name"
-      />
-      <div class="search-results"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingdom 2381</title>
+    <link rel="stylesheet" href="style/home.css">
+</head>
+<body>
+    <div class="menu-icon">Menu</div>
+    <navbar id="list">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About us.html">About Us</a></li>
+            <li><a href="">Migration</a></li>
+            <li><a href="stats.html">Kvk Stats</a></li>
+            <li><a href="">Hall of Fame</a></li>
+        </ul>
+    </navbar>
+    <img src="style/rise-of-kingdoms-tips-featured-696x408.png" alt="">
+    <div class="container">  
+        <h1 class="typed"></h1>
     </div>
     <footer class="footer">
-      Made by <span class="copy">Chandler Bing</span>
-    </footer>
-  </div>
-    <script src="./main.js"></script>
-  </body>
+        Made by <span class="copy">Chandler Bing</span>
+      </footer>
+      <script src="main.js"></script>
+    <script src="typed.min.js"></script>
+    <script>
+        const typed = new Typed('.typed',{
+            strings:['Welcome to kingdom 2381','For information click on about us','To see your stats click on kvk stats','For players kvk ranking click on hall of fame'],
+            typeSpeed:55,
+            backSpeed:10,
+            showCursor:true,
+            cursorChar:"_",
+            loop:true
+        });
+    </script>
+    
+</body>
 </html>
