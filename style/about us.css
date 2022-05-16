@@ -1,3 +1,4 @@
+/* Basis */
 * {
   padding: 0;
   margin: 0;
@@ -5,6 +6,8 @@
 body {
   background-color: #0d0c1d;
 }
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+/* Main Content */
 .content ul {
   padding: 40px;
   background: #151630;
@@ -21,8 +24,10 @@ body {
   color: white;
   font-size: 60px;
   text-align: center;
+  margin-top: 50px;
 }
-
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+/* Navbar */
 .menu-icon {
   display: none;
 }
@@ -47,6 +52,9 @@ body {
 #list ul li a:hover {
   color: white;
 }
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Footer */
 .footer {
   color: white;
   position: absolute;
@@ -57,11 +65,13 @@ body {
 .copy {
   color: red;
 }
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
 
+/* Media */
 @media (max-width: 768px) {
   .content ul {
-    width: 100%;
-    margin-top: 100px;
+    width: fit-content;
+    margin-top: 40px;
   }
   .content ul li {
     font-size: 20px;
@@ -69,7 +79,9 @@ body {
     margin-left: 20px;
   }
   #list {
+    position: relative;
     display: none;
+    z-index: 1;
   }
   #list ul {
     background: #151630;
@@ -110,9 +122,6 @@ body {
 }
 
 @media (max-width: 420px) {
-  .content ul {
-    overflow: hidden;
-  }
   .content h1 {
     font-size: 30px;
   }
@@ -121,6 +130,11 @@ body {
   }
 }
 @media (max-width: 990px) {
+  .content ul li {
+    font-size: 20px;
+    display: block;
+    margin-left: 20px;
+  }
   #list ul {
     margin-left: 0;
   }
@@ -129,3 +143,4 @@ body {
     font-size: 18px;
   }
 }
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
