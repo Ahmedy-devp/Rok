@@ -255,7 +255,8 @@ li.fade {
 }
 @media (max-width: 558px) {
   .container-big {
-    clip-path: circle(500px at 50% -58%);
+     clip-path: circle(460px at 50% -60%);
+
   }
 }
 @keyframes slide {
