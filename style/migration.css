@@ -193,7 +193,22 @@ li.fade {
 }
 @media (max-width: 558px) {
   .container-big {
-    clip-path: circle(500px at 50% -58%);
+    clip-path: circle(500px at 50% -52%);
+  }
+}
+@media screen and (max-width: 558px) and (max-height:720px) {
+  .container-big {
+    clip-path: circle(430px at 50% -55%);
+  }
+}
+@media screen and (max-width: 558px) and (max-height:650px){
+  .container-big {
+    clip-path: circle(410px at 50% -55%);
+  }
+}
+@media screen and (max-width: 558px) and (max-height:600px){
+  .container-big {
+    clip-path: circle(380px at 50% -55%);
   }
 }
 /* animation */
